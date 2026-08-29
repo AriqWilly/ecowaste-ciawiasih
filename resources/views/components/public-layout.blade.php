@@ -157,9 +157,9 @@
         <div class="flex justify-between items-center px-6 sm:px-8 max-w-[1200px] mx-auto w-full">
             <!-- Logos Capsule (Left) -->
             <a href="{{ route('home') }}" class="flex items-center bg-white rounded-full px-4 py-1.5 gap-2.5 shadow-sm border border-gray-100 h-10 shrink-0">
-                <span class="material-symbols-outlined text-primary" style="font-size: 22px;" title="Pemerintah Kabupaten Cirebon">account_balance</span>
-                <span class="material-symbols-outlined text-tertiary" style="font-size: 22px;" title="Pengelolaan Sampah Mandiri">recycling</span>
-                <img src="{{ asset('images/logo-cirebon.png') }}" class="h-6 w-auto object-contain" alt="Universitas Muhammadiyah Cirebon" title="Universitas Muhammadiyah Cirebon">
+                <span class="material-symbols-outlined text-primary" style="font-size: 22px;" title="Gedung">account_balance</span>
+                <img src="{{ asset('images/logo_recycle.png') }}" class="h-6 w-auto object-contain" alt="Pengelolaan Sampah Mandiri" title="Pengelolaan Sampah Mandiri">
+                <img src="{{ asset('images/logo-cirebon.png') }}" class="h-6 w-auto object-contain" alt="Pemerintah Kabupaten Cirebon" title="Pemerintah Kabupaten Cirebon">
             </a>
 
             <!-- Centered Menu Capsule (Desktop) -->
@@ -227,9 +227,7 @@
         <!-- Header in Drawer -->
         <div class="flex justify-between items-center pb-5 mb-6 border-b border-gray-100 dark:border-gray-800">
             <div class="flex items-center gap-2.5">
-                <div class="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0">
-                    <span class="material-symbols-outlined text-xl">recycling</span>
-                </div>
+                <img src="{{ asset('images/logo_recycle.png') }}" class="h-8 w-auto object-contain" alt="Pengelolaan Sampah Mandiri" title="Pengelolaan Sampah Mandiri">
                 <div>
                     <div class="font-bold text-xs text-gray-900 dark:text-white leading-tight">Sistem Informasi Pengelolaan Sampah</div>
                     <div class="text-[10px] text-gray-500 font-medium">Desa Ciawiasih</div>
