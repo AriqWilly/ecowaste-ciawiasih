@@ -58,10 +58,6 @@ class TeamMember extends Model
             return $this->photo_path;
         }
 
-        if (!\Illuminate\Support\Facades\Storage::disk('public')->exists($this->photo_path)) {
-            return 'https://ui-avatars.com/api/?name=' . urlencode($this->name) . '&background=0d631b&color=ffffff';
-        }
-
         return \Illuminate\Support\Facades\Storage::url($this->photo_path);
     }
 }

@@ -101,7 +101,7 @@
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-bold text-on-surface">Pengelola Program & Mitra</h2>
                 <p class="text-sm text-on-surface-variant leading-relaxed">
-                    Sinergi berkelanjutan antara pengurus BUMDes, aparatur Desa Ciawiasih, dan mitra pendamping pengabdian masyarakat.
+                    Sinergi berkelanjutan antara pengurus desa, aparatur Desa Ciawiasih, dan mitra pendamping pengabdian masyarakat.
                 </p>
             </div>
             
@@ -112,11 +112,7 @@
                     
                     <!-- Avatar / Logo Container -->
                     <div class="w-28 h-28 rounded-2xl bg-surface-container overflow-hidden mb-5 border-2 border-outline-variant/40 group-hover:border-primary/40 shadow-sm transition-all duration-300 p-1 flex items-center justify-center">
-                        @if($member->photo_path)
-                            <img src="{{ Storage::url($member->photo_path) }}" alt="{{ $member->name }}" class="w-full h-full object-cover rounded-xl">
-                        @else
-                            <span class="material-symbols-outlined text-5xl text-outline-variant">person</span>
-                        @endif
+                        <img src="{{ $member->photo_url }}" alt="{{ $member->name }}" class="w-full h-full object-cover rounded-xl">
                     </div>
 
                     <!-- Member Info -->
@@ -134,7 +130,7 @@
                         @if($member->type === 'pengurus')
                             <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary border border-primary/20">
                                 <span class="material-symbols-outlined text-sm">shield_person</span>
-                                Pengurus BUMDes
+                                Pengurus Desa
                             </span>
                         @else
                             <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-800 border border-amber-500/30">

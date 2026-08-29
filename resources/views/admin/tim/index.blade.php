@@ -72,7 +72,7 @@
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div>
                     <h1 class="text-headline-lg font-bold text-on-surface">Kelola Pengurus & Mitra Desa</h1>
-                    <p class="text-body-md text-on-surface-variant mt-1">Kelola data profil tim pengelola BUMDes dan mitra pendukung daur ulang desa yang tampil di halaman Tentang Kami.</p>
+                    <p class="text-body-md text-on-surface-variant mt-1">Kelola data profil tim pengelola desa dan mitra pendukung daur ulang desa yang tampil di halaman Tentang Kami.</p>
                 </div>
                 <button @click="openCreate()" class="bg-primary hover:bg-primary-container text-on-primary hover:text-on-primary-container px-6 py-3 rounded-lg text-label-md font-semibold flex items-center justify-center gap-2 shadow-sm transition-colors shrink-0">
                     <span class="material-symbols-outlined text-sm">add</span>
@@ -101,7 +101,7 @@
                     <a href="{{ route('admin.tim.index', array_merge(request()->only('search'), ['type' => 'pengurus'])) }}" 
                        class="px-4 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-colors
                               {{ request('type') === 'pengurus' ? 'bg-primary-container text-on-primary-container border border-primary/20' : 'border border-outline-variant text-on-surface-variant hover:bg-surface-container-low' }}">
-                        Pengurus BUMDes
+                        Pengurus Desa
                     </a>
                     <a href="{{ route('admin.tim.index', array_merge(request()->only('search'), ['type' => 'mitra'])) }}" 
                        class="px-4 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-colors
@@ -300,13 +300,13 @@
                                     <label class="block text-xs font-semibold text-on-surface mb-1">Jabatan / Peran</label>
                                     <input type="text" name="role" x-model="role" required
                                            class="w-full px-4 py-2.5 rounded-lg bg-surface-container-low border border-outline-variant focus:ring-1 focus:ring-primary focus:border-primary text-sm text-on-surface outline-none transition-all" 
-                                           placeholder="Contoh: Direktur BUMDes"/>
+                                           placeholder="Contoh: Direktur Desa Ciawiasih"/>
                                 </div>
                                 <div>
                                     <label class="block text-xs font-semibold text-on-surface mb-1">Kategori Tim</label>
                                     <select name="type" x-model="type" required
                                             class="w-full px-4 py-2.5 rounded-lg bg-surface-container-low border border-outline-variant focus:ring-1 focus:ring-primary focus:border-primary text-sm text-on-surface outline-none transition-all">
-                                        <option value="pengurus">Pengurus BUMDes</option>
+                                        <option value="pengurus">Pengurus Desa</option>
                                         <option value="mitra">Mitra / Komunitas</option>
                                     </select>
                                 </div>

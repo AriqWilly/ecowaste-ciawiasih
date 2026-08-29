@@ -369,7 +369,7 @@
                         {{ strtoupper(substr(auth()->user()->name ?? 'Admin', 0, 2)) }}
                     </div>
                     <div class="hidden sm:block text-left">
-                        <p class="text-xs font-bold text-on-surface leading-tight group-hover:text-primary transition-colors">{{ auth()->user()->name ?? 'Admin BUMDes' }}</p>
+                        <p class="text-xs font-bold text-on-surface leading-tight group-hover:text-primary transition-colors">{{ auth()->user()->name ?? 'Admin Desa' }}</p>
                         <p class="text-[10px] text-primary font-semibold leading-tight">Administrator</p>
                     </div>
                 </a>

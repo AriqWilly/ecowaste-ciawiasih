@@ -270,7 +270,7 @@
 
                     <div class="space-y-3 text-xs">
                         <div class="flex items-center justify-between">
-                            <span class="text-on-surface-variant">Nomor WhatsApp BUMDes:</span>
+                            <span class="text-on-surface-variant">Nomor WhatsApp Pengelola Desa:</span>
                             <span class="font-bold text-primary font-mono">{{ $villageWa }}</span>
                         </div>
                         <div class="flex items-center justify-between">

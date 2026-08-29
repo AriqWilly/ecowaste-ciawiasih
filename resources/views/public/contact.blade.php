@@ -59,7 +59,7 @@
             <!-- Right Column: Contact Form -->
             <div class="bg-surface p-8 rounded-xl shadow-sm border border-surface-container-highest">
                 <h2 class="text-2xl font-bold mb-2 text-on-surface">Kirim Pesan</h2>
-                <p class="text-xs text-on-surface-variant mb-6">Pesan Anda akan otomatis tersimpan dan diteruskan langsung ke WhatsApp Pengelola BUMDes.</p>
+                <p class="text-xs text-on-surface-variant mb-6">Pesan Anda akan otomatis tersimpan dan diteruskan langsung ke WhatsApp Pengelola Desa Ciawiasih.</p>
 
                 @if($errors->any())
                 <div class="mb-5 bg-error-container text-on-error-container p-3.5 rounded-xl text-xs flex items-center gap-2">

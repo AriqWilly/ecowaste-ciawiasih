@@ -66,7 +66,7 @@
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div>
                     <h1 class="text-headline-lg font-bold text-on-surface">Kelola Artikel Edukasi & Berita Desa</h1>
-                    <p class="text-body-md text-on-surface-variant mt-1">Publikasikan artikel pemilahan sampah, tips lingkungan, dan informasi kegiatan BUMDes Ciawiasih.</p>
+                    <p class="text-body-md text-on-surface-variant mt-1">Publikasikan artikel pemilahan sampah, tips lingkungan, dan informasi kegiatan pengelolaan sampah Desa Ciawiasih.</p>
                 </div>
                 <button @click="openCreate()" class="bg-primary hover:bg-primary-container text-on-primary hover:text-on-primary-container px-6 py-3 rounded-lg text-label-md font-semibold flex items-center justify-center gap-2 shadow-sm transition-colors shrink-0">
                     <span class="material-symbols-outlined text-sm">add</span>

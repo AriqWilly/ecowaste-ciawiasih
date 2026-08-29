@@ -189,7 +189,7 @@
 
     <!-- Clean Footer -->
     <footer class="py-6 px-6 text-center text-xs text-on-surface-variant border-t border-outline-variant/20">
-        <p>© {{ date('Y') }} Ciawiasih Eco-System • Portal Administrator BUMDes Desa Ciawiasih</p>
+        <p>© {{ date('Y') }} Ciawiasih Eco-System • Portal Administrator Desa Ciawiasih</p>
     </footer>
 
 </body>

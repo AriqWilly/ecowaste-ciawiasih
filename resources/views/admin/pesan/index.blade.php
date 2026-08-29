@@ -23,7 +23,7 @@
                 cleanPhone = '62' + cleanPhone.substring(1);
             }
             
-            let replyText = `Halo Bpk/Ibu *${msg.name}*, terima kasih telah menghubungi Pengelola BUMDes Daur Ulang Desa Ciawiasih mengenai *${msg.subject}*.\n\n`;
+            let replyText = `Halo Bpk/Ibu *${msg.name}*, terima kasih telah menghubungi Tim Pengelola Daur Ulang Desa Ciawiasih mengenai *${msg.subject}*.\n\n`;
             this.currentMessage.wa_reply_url = `https://api.whatsapp.com/send?phone=${cleanPhone}&text=${encodeURIComponent(replyText)}`;
             
             this.openModal = true;

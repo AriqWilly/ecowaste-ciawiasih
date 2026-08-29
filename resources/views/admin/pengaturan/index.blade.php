@@ -127,7 +127,7 @@
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <!-- WhatsApp -->
                                     <div>
-                                        <label class="block text-xs font-semibold text-on-surface mb-1" for="wa_utama">Nomor WhatsApp Utama BUMDes</label>
+                                        <label class="block text-xs font-semibold text-on-surface mb-1" for="wa_utama">Nomor WhatsApp Utama Pengelola Desa</label>
                                         <div class="relative">
                                             <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-on-surface-variant">
                                                 <span class="material-symbols-outlined text-lg">phone_iphone</span>
