@@ -113,9 +113,9 @@
         <div class="flex justify-between items-center px-6 sm:px-8 max-w-[1200px] mx-auto w-full">
             <!-- Logos Capsule (Left) -->
             <a href="{{ route('home') }}" class="flex items-center bg-white rounded-full px-4 py-1.5 gap-2.5 shadow-sm border border-gray-100 h-10 shrink-0">
-                <span class="material-symbols-outlined text-primary" style="font-size: 22px;" title="Gedung">account_balance</span>
-                <img src="{{ asset('images/logo_recycle.png') }}" class="h-6 w-auto object-contain" alt="Pengelolaan Sampah Mandiri" title="Pengelolaan Sampah Mandiri">
-                <img src="{{ asset('images/logo-cirebon.png') }}" class="h-6 w-auto object-contain" alt="Pemerintah Kabupaten Cirebon" title="Pemerintah Kabupaten Cirebon">
+                <span class="material-symbols-outlined text-primary" style="font-size: 24px;" title="Gedung">account_balance</span>
+                <img src="{{ asset('images/logo_recycle.png') }}" class="h-[28px] w-auto object-contain scale-110" alt="Pengelolaan Sampah Mandiri" title="Pengelolaan Sampah Mandiri">
+                <img src="{{ asset('images/logo-cirebon.png') }}" class="h-[26px] w-auto object-contain" alt="Pemerintah Kabupaten Cirebon" title="Pemerintah Kabupaten Cirebon">
             </a>
 
             <!-- Centered Menu Capsule (Desktop) -->
@@ -157,9 +157,9 @@
         <div class="flex justify-between items-center px-6 sm:px-8 max-w-[1200px] mx-auto w-full">
             <!-- Logos Capsule (Left) -->
             <a href="{{ route('home') }}" class="flex items-center bg-white rounded-full px-4 py-1.5 gap-2.5 shadow-sm border border-gray-100 h-10 shrink-0">
-                <span class="material-symbols-outlined text-primary" style="font-size: 22px;" title="Gedung">account_balance</span>
-                <img src="{{ asset('images/logo_recycle.png') }}" class="h-6 w-auto object-contain" alt="Pengelolaan Sampah Mandiri" title="Pengelolaan Sampah Mandiri">
-                <img src="{{ asset('images/logo-cirebon.png') }}" class="h-6 w-auto object-contain" alt="Pemerintah Kabupaten Cirebon" title="Pemerintah Kabupaten Cirebon">
+                <span class="material-symbols-outlined text-primary" style="font-size: 24px;" title="Gedung">account_balance</span>
+                <img src="{{ asset('images/logo_recycle.png') }}" class="h-[28px] w-auto object-contain scale-110" alt="Pengelolaan Sampah Mandiri" title="Pengelolaan Sampah Mandiri">
+                <img src="{{ asset('images/logo-cirebon.png') }}" class="h-[26px] w-auto object-contain" alt="Pemerintah Kabupaten Cirebon" title="Pemerintah Kabupaten Cirebon">
             </a>
 
             <!-- Centered Menu Capsule (Desktop) -->
