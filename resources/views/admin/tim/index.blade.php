@@ -131,13 +131,9 @@
                             <tr class="hover:bg-surface-container-low/50 transition-colors group">
                                 <td class="py-3 px-4">
                                     <div class="w-12 h-12 rounded-full bg-surface-variant overflow-hidden shrink-0 border border-outline-variant flex items-center justify-center">
-                                        @if($member->photo_path)
-                                            <img class="w-full h-full object-cover" 
-                                                 src="{{ Storage::url($member->photo_path) }}" 
-                                                 alt="{{ $member->name }}"/>
-                                        @else
-                                            <span class="material-symbols-outlined text-outline-variant text-2xl">person</span>
-                                        @endif
+                                        <img class="w-full h-full object-cover" 
+                                             src="{{ $member->photo_url }}" 
+                                             alt="{{ $member->name }}"/>
                                     </div>
                                 </td>
                                 <td class="py-3 px-4 font-semibold text-on-surface">

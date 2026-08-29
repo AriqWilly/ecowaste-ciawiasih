@@ -140,7 +140,7 @@
                                     <div class="flex items-center gap-3">
                                         <div class="w-12 h-12 rounded-md bg-surface-variant overflow-hidden shrink-0 border border-outline-variant">
                                             <img class="w-full h-full object-cover" 
-                                                 src="{{ $product->image_path ? Storage::url($product->image_path) : 'https://placehold.co/100/edeeef/40493d?text=Foto' }}" 
+                                                 src="{{ $product->image_url }}" 
                                                  alt="{{ $product->name }}"/>
                                         </div>
                                         <div>

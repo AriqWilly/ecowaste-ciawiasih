@@ -143,7 +143,7 @@
                                     <td class="py-3 px-4">
                                         <div class="flex items-center gap-3">
                                             <div class="w-10 h-10 rounded-lg bg-surface-variant overflow-hidden shrink-0 border border-outline-variant/40">
-                                                <img src="{{ $prod->image_path ? Storage::url($prod->image_path) : 'https://placehold.co/100/edeeef/40493d?text=Foto' }}" 
+                                                <img src="{{ $prod->image_url }}" 
                                                      alt="{{ $prod->name }}" class="w-full h-full object-cover"/>
                                             </div>
                                             <div>

@@ -124,13 +124,9 @@
                             <tr class="hover:bg-surface-container-low/50 transition-colors group">
                                 <td class="py-3 px-4">
                                     <div class="w-16 h-12 rounded-md bg-surface-variant overflow-hidden shrink-0 border border-outline-variant flex items-center justify-center">
-                                        @if($article->media_path)
-                                            <img class="w-full h-full object-cover" 
-                                                 src="{{ Storage::url($article->media_path) }}" 
-                                                 alt="{{ $article->title }}"/>
-                                        @else
-                                            <span class="material-symbols-outlined text-outline-variant">article</span>
-                                        @endif
+                                        <img class="w-full h-full object-cover" 
+                                             src="{{ $article->media_url }}" 
+                                             alt="{{ $article->title }}"/>
                                     </div>
                                 </td>
                                 <td class="py-3 px-4">
