@@ -164,7 +164,7 @@
             <div class="relative z-10 md:max-w-xl text-center md:text-left">
                 <h2 class="text-headline-md text-on-primary md:text-3xl font-bold mb-4">Sudah Memilah Sampah Hari Ini?</h2>
                 <p class="text-body-md text-on-primary/90 text-lg">
-                    Bawa sampah anorganik yang sudah dipilah ke Bank Sampah Desa/BUMDes Ciawiasih dan jadikan sampahmu berkah untuk lingkungan!
+                    Terapkan ilmu dari artikel edukasi ini dan dukung warga Desa Ciawiasih dengan membeli produk daur ulang berkualitas dari katalog kami!
                 </p>
             </div>
             <div class="relative z-10 shrink-0">
