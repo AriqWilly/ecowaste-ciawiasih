@@ -30,6 +30,10 @@ class Product extends Model
             return $this->image_path;
         }
 
+        if (!\Illuminate\Support\Facades\Storage::disk('public')->exists($this->image_path)) {
+            return 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=400&q=80';
+        }
+
         return \Illuminate\Support\Facades\Storage::url($this->image_path);
     }
 }
