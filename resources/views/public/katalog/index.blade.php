@@ -1,4 +1,4 @@
-<x-public-layout title="Katalog Produk - Sistem Informasi Pengelolaan Sampah Desa Ciawiasih">
+<x-public-layout>
     <style>
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

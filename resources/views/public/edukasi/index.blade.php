@@ -1,4 +1,4 @@
-<x-public-layout title="Edukasi Sampah - Sistem Informasi Pengelolaan Sampah Desa Ciawiasih">
+<x-public-layout>
     <!-- Hero Section -->
     <section class="bg-gradient-to-r from-primary via-[#1b6d24] to-[#2e7d32] text-white py-20 relative overflow-hidden shadow-sm">
         <div class="absolute inset-0 opacity-10 pointer-events-none"
