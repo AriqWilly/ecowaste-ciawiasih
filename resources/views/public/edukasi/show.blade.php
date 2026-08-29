@@ -24,7 +24,7 @@
         <!-- Meta -->
         <div class="flex items-center gap-3 text-on-surface-variant text-label-md mb-8 pb-8 border-b border-surface-variant">
             <span class="material-symbols-outlined" style="font-size:18px;">edit_document</span>
-            <span>BUMDes Ciawiasih</span>
+            <span>Tim Pengelola Desa Ciawiasih</span>
             @if($content->published_at)
             <span>•</span>
             <span>{{ $content->published_at->translatedFormat('d F Y') }}</span>

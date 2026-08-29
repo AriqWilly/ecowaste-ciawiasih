@@ -94,7 +94,7 @@
                         <div class="p-6">
                             <div class="flex items-center gap-2 mb-3 text-on-surface-variant text-label-sm">
                                 <span class="material-symbols-outlined" style="font-size:16px;">edit_document</span>
-                                <span>BUMDes Ciawiasih</span>
+                                <span>Tim Pengelola Desa Ciawiasih</span>
                                 @if($content->published_at)
                                 <span>•</span>
                                 <span>{{ $content->published_at->translatedFormat('d M Y') }}</span>
@@ -117,7 +117,7 @@
                         <div>
                             <h3 class="text-headline-md font-semibold text-on-surface mb-2">Konten Edukasi Segera Hadir</h3>
                             <p class="text-body-md text-on-surface-variant max-w-sm">
-                                Artikel dan panduan seputar pengelolaan sampah dari tim BUMDes Ciawiasih akan segera tersedia.
+                                Artikel dan panduan seputar pengelolaan sampah dari Tim Pengelola Desa Ciawiasih akan segera tersedia.
                             </p>
                         </div>
                     </div>
