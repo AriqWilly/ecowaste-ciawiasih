@@ -42,7 +42,7 @@ class DatabaseSeeder extends Seeder
                 'category_id' => $catKompos->id,
                 'title' => 'Cara Praktis Mengolah Sisa Dapur Menjadi Pupuk Kompos',
                 'content' => "Sampah dapur Anda sebenarnya adalah sumber nutrisi berharga bagi tanaman Anda. Dengan cara composting sederhana, kita bisa memotong volume pembuangan sampah ke TPA hingga 50%. Berikut langkahnya:\n\n1. Siapkan Wadah Komposter: Gunakan ember bekas cat atau wadah yang diberi lubang-lubang kecil di bawahnya untuk sirkulasi udara.\n2. Lapisan Dasar: Masukkan sekam padi atau daun kering sebagai lapisan penyeimbang kelembapan di bagian terbawah.\n3. Masukkan Sampah Dapur: Masukkan sisa potongan sayur, sisa buah, cangkang telur, dan ampas kopi ke dalam wadah.\n4. Tambahkan Aktivator: Siram sedikit cairan EM4 yang telah dilarutkan air gula untuk mempercepat pembusukan bakteri.\n5. Tutup Rapat: Tutup wadah dan diamkan selama 4-6 minggu dengan diaduk sesekali setiap minggunya.\n\nSelamat mencoba membuat kompos mandiri di rumah!",
-                'media_path' => 'https://images.unsplash.com/photo-1591955506264-3f5a6834570a?auto=format&fit=crop&w=800&q=80',
+                'media_path' => 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80',
                 'published_at' => now(),
             ]
         );
