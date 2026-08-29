@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $title ?? 'Katalog Daur Ulang Desa Ciawiasih' }}</title>
+    <title>{{ $title ?? 'Sistem Informasi Pengelolaan Sampah Desa Ciawiasih' }}</title>
     <meta name="description" content="Sistem Informasi Pengelolaan Sampah & Katalog Daur Ulang Desa Ciawiasih, Kecamatan Susukan Lebak, Kabupaten Cirebon.">
 
     <!-- Material Symbols -->
