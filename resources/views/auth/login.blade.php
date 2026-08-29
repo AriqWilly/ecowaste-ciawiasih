@@ -4,6 +4,9 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Masuk Admin - Sistem Informasi Pengelolaan Sampah Desa Ciawiasih</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ asset('images/logo_recycle.png') }}"/>
+    <link rel="shortcut icon" type="image/png" href="{{ asset('images/logo_recycle.png') }}"/>
     <!-- Material Symbols & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
