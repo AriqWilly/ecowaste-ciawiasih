@@ -80,14 +80,13 @@
                 <article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.05)] border border-surface-variant group cursor-pointer">
                     <a href="{{ route('education.show', $content->slug) }}" class="block">
                         <div class="relative h-48 w-full overflow-hidden">
-                            @if($content->media_path)
+                            @php
+                                $imgSrc = $content->media_path 
+                                    ? (Str::startsWith($content->media_path, ['http://', 'https://']) ? $content->media_path : Storage::url($content->media_path))
+                                    : 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80';
+                            @endphp
                             <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-                                 style="background-image: url('{{ Storage::url($content->media_path) }}')"></div>
-                            @else
-                            <div class="w-full h-full bg-primary-container/30 flex items-center justify-center transition-transform duration-500 group-hover:scale-105">
-                                <span class="material-symbols-outlined text-primary/40" style="font-size:64px; font-variation-settings: 'FILL' 1;">menu_book</span>
-                            </div>
-                            @endif
+                                 style="background-image: url('{{ $imgSrc }}')"></div>
                             <div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-sm text-on-primary text-label-sm px-3 py-1 rounded-full uppercase tracking-wider font-semibold">
                                 {{ $content->category->name ?? 'Umum' }}
                             </div>

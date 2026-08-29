@@ -32,11 +32,14 @@
         </div>
 
         <!-- Media -->
-        @if($content->media_path)
+        @php
+            $showImgSrc = $content->media_path 
+                ? (Str::startsWith($content->media_path, ['http://', 'https://']) ? $content->media_path : Storage::url($content->media_path))
+                : 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1200&q=80';
+        @endphp
         <div class="mb-10 rounded-xl overflow-hidden border border-surface-variant shadow-[0_4px_12px_rgba(0,0,0,0.05)]">
-            <img src="{{ Storage::url($content->media_path) }}" alt="{{ $content->title }}" class="w-full"/>
+            <img src="{{ $showImgSrc }}" alt="{{ $content->title }}" class="w-full h-auto max-h-[450px] object-cover"/>
         </div>
-        @endif
 
         <!-- Body -->
         <div class="prose prose-lg max-w-none text-on-surface-variant leading-[28px]
