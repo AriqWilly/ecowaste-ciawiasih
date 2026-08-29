@@ -1,4 +1,4 @@
-<x-public-layout>
+<x-public-layout title="Kontak Warga - Sistem Informasi Pengelolaan Sampah Desa Ciawiasih">
     <!-- Hero Section -->
     <section class="bg-surface-container-low py-16 px-4 md:px-8">
         <div class="max-w-[1200px] mx-auto text-center">

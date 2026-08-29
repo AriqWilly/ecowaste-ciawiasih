@@ -1,4 +1,4 @@
-<x-public-layout>
+<x-public-layout title="Sistem Informasi Pengelolaan Sampah Desa Ciawiasih">
     <!-- Hero Section -->
     <section class="relative bg-gray-900 bg-cover bg-center min-h-screen flex items-center text-white pt-20" 
              style="background-image: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)), url('{{ asset('images/bg-hero.jpg') }}');">

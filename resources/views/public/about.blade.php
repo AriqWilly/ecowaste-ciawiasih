@@ -1,4 +1,4 @@
-<x-public-layout>
+<x-public-layout title="Tentang Kami - Sistem Informasi Pengelolaan Sampah Desa Ciawiasih">
     <!-- Page Header -->
     <section class="bg-surface-container-low py-20 px-8 relative overflow-hidden">
         <!-- Decorative organic shapes -->
