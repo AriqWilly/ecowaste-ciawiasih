@@ -47,4 +47,17 @@ class TeamMember extends Model
     {
         return $query->where('type', 'mitra');
     }
+
+    public function getPhotoUrlAttribute(): string
+    {
+        if (!$this->photo_path) {
+            return 'https://ui-avatars.com/api/?name=' . urlencode($this->name) . '&background=0d631b&color=ffffff';
+        }
+
+        if (\Illuminate\Support\Str::startsWith($this->photo_path, ['http://', 'https://'])) {
+            return $this->photo_path;
+        }
+
+        return \Illuminate\Support\Facades\Storage::url($this->photo_path);
+    }
 }

@@ -101,7 +101,7 @@
                 <a href="{{ route('catalog.show', $product->slug) }}" class="block">
                     <div class="h-48 w-full bg-surface-container-low relative overflow-hidden">
                         <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                             src="{{ $product->image_path ? Storage::url($product->image_path) : 'https://placehold.co/400x300/edeeef/40493d?text=Foto+Produk' }}"
+                             src="{{ $product->image_url }}"
                              alt="{{ $product->name }}"/>
                         <span class="absolute top-2 right-2 bg-primary-fixed text-on-primary-fixed-variant px-2 py-1 rounded-full text-label-sm font-semibold">
                             {{ $product->category->name ?? 'Produk' }}

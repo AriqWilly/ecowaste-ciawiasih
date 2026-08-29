@@ -78,8 +78,8 @@ class EducationController extends Controller
 
         // Handle Image Upload
         if ($request->hasFile('media')) {
-            $path = $request->file('media')->store('education', 'public');
-            $article->media_path = $path;
+            $cloudinaryUrl = \App\Services\CloudinaryService::upload($request->file('media'), 'education');
+            $article->media_path = $cloudinaryUrl ?: $request->file('media')->store('education', 'public');
         }
 
         $article->save();
@@ -129,11 +129,11 @@ class EducationController extends Controller
 
         // Handle Image Upload
         if ($request->hasFile('media')) {
-            if ($article->media_path) {
+            if ($article->media_path && !\Illuminate\Support\Str::startsWith($article->media_path, ['http://', 'https://'])) {
                 Storage::disk('public')->delete($article->media_path);
             }
-            $path = $request->file('media')->store('education', 'public');
-            $article->media_path = $path;
+            $cloudinaryUrl = \App\Services\CloudinaryService::upload($request->file('media'), 'education');
+            $article->media_path = $cloudinaryUrl ?: $request->file('media')->store('education', 'public');
         }
 
         $article->save();

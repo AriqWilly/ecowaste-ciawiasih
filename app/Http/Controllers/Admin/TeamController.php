@@ -53,8 +53,8 @@ class TeamController extends Controller
         $member->is_active = $request->has('is_active');
 
         if ($request->hasFile('photo')) {
-            $path = $request->file('photo')->store('team', 'public');
-            $member->photo_path = $path;
+            $cloudinaryUrl = \App\Services\CloudinaryService::upload($request->file('photo'), 'team');
+            $member->photo_path = $cloudinaryUrl ?: $request->file('photo')->store('team', 'public');
         }
 
         $member->save();
@@ -86,11 +86,11 @@ class TeamController extends Controller
         $member->is_active = $request->has('is_active');
 
         if ($request->hasFile('photo')) {
-            if ($member->photo_path) {
+            if ($member->photo_path && !\Illuminate\Support\Str::startsWith($member->photo_path, ['http://', 'https://'])) {
                 Storage::disk('public')->delete($member->photo_path);
             }
-            $path = $request->file('photo')->store('team', 'public');
-            $member->photo_path = $path;
+            $cloudinaryUrl = \App\Services\CloudinaryService::upload($request->file('photo'), 'team');
+            $member->photo_path = $cloudinaryUrl ?: $request->file('photo')->store('team', 'public');
         }
 
         $member->save();

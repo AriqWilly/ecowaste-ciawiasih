@@ -73,8 +73,8 @@ class ProductController extends Controller
 
         // Handle Image Upload
         if ($request->hasFile('image')) {
-            $path = $request->file('image')->store('products', 'public');
-            $product->image_path = $path;
+            $cloudinaryUrl = \App\Services\CloudinaryService::upload($request->file('image'), 'products');
+            $product->image_path = $cloudinaryUrl ?: $request->file('image')->store('products', 'public');
         }
 
         $product->save();
@@ -118,12 +118,11 @@ class ProductController extends Controller
 
         // Handle Image Upload
         if ($request->hasFile('image')) {
-            // Delete old image if exists
-            if ($product->image_path) {
+            if ($product->image_path && !\Illuminate\Support\Str::startsWith($product->image_path, ['http://', 'https://'])) {
                 Storage::disk('public')->delete($product->image_path);
             }
-            $path = $request->file('image')->store('products', 'public');
-            $product->image_path = $path;
+            $cloudinaryUrl = \App\Services\CloudinaryService::upload($request->file('image'), 'products');
+            $product->image_path = $cloudinaryUrl ?: $request->file('image')->store('products', 'public');
         }
 
         $product->save();

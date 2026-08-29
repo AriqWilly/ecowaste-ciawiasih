@@ -11,7 +11,7 @@
         <div class="bg-white rounded-[16px] shadow-sm flex flex-col md:flex-row overflow-hidden border border-gray-100">
             <!-- Product Image -->
             <div class="w-full md:w-1/2 h-[400px] md:h-auto bg-[#F8F9FA] flex items-center justify-center p-4">
-                <img src="{{ $product->image_path ? Storage::url($product->image_path) : 'https://placehold.co/600x400/e1e3e4/707a6c?text=Foto+Produk+Belum+Tersedia' }}" alt="{{ $product->name }}" class="w-full h-full object-cover object-center rounded-lg shadow-sm">
+                <img src="{{ $product->image_url }}" alt="{{ $product->name }}" class="w-full h-full object-cover object-center rounded-lg shadow-sm">
             </div>
             
             <!-- Product Info -->

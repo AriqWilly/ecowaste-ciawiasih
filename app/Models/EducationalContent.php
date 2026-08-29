@@ -22,4 +22,17 @@ class EducationalContent extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
+    public function getMediaUrlAttribute(): string
+    {
+        if (!$this->media_path) {
+            return 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80';
+        }
+
+        if (\Illuminate\Support\Str::startsWith($this->media_path, ['http://', 'https://'])) {
+            return $this->media_path;
+        }
+
+        return \Illuminate\Support\Facades\Storage::url($this->media_path);
+    }
 }

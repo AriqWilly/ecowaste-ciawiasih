@@ -78,7 +78,7 @@
                 <!-- Image & Badges -->
                 <div class="relative aspect-[4/3] bg-surface-container overflow-hidden">
                     <img class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
-                         src="{{ $product->image_path ? Storage::url($product->image_path) : 'https://placehold.co/600x450/edeeef/40493d?text=Foto+Produk' }}"
+                         src="{{ $product->image_url }}"
                          alt="{{ $product->name }}"/>
                     
                     <!-- Category Badge -->
