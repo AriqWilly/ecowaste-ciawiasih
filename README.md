@@ -2,7 +2,7 @@
 
 > Proyek Kerja Kuliah Mahasiswa (KKM) Individu — Program Studi Teknik Informatika  
 > Universitas Muhammadiyah Cirebon (UMC) — Kelompok 36  
-> Desa Ciawiasih, Kecamatan Ciawiasih, Kabupaten Ciamis, Jawa Barat
+> Desa Ciawiasih, Kecamatan Susukan Lebak, Kabupaten Cirebon, Jawa Barat
 
 ---
 
@@ -204,7 +204,7 @@ KKM-desa/
 | **Program Studi** | Teknik Informatika |
 | **Universitas** | Universitas Muhammadiyah Cirebon (UMC) |
 | **Kegiatan** | KKM (Kuliah Kerja Mahasiswa) |
-| **Lokasi KKM** | Desa Ciawiasih, Kab. Ciamis, Jawa Barat |
+| **Lokasi KKM** | Desa Ciawiasih, Kab. Cirebon, Jawa Barat |
 | **Kelompok** | Kelompok 36 (Fokus: Pengelolaan Sampah Organik) |
 
 ---

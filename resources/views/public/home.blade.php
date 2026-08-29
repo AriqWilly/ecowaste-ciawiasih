@@ -1,22 +1,28 @@
 <x-public-layout>
     <!-- Hero Section -->
     <section class="relative bg-gray-900 bg-cover bg-center min-h-screen flex items-center text-white pt-20" 
-             style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('{{ asset('images/bg-hero.jpg') }}');">
-        <div class="max-w-[1200px] mx-auto px-8 relative z-10 w-full space-y-6">
-            <h1 class="text-5xl md:text-7xl font-bold tracking-tight leading-tight max-w-4xl">
-                Katalog Daur Ulang<br>Desa Ciawiasih
+             style="background-image: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)), url('{{ asset('images/bg-hero.jpg') }}');">
+        <div class="max-w-[1200px] mx-auto px-6 sm:px-8 relative z-10 w-full space-y-6">
+            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/20 text-xs font-semibold text-primary-fixed-dim">
+                <span class="material-symbols-outlined text-sm text-emerald-400">recycling</span>
+                <span>Digitalisasi Katalog Daur Ulang & Edukasi Sampah</span>
+            </div>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight max-w-4xl">
+                Sistem Informasi<br>Pengelolaan Sampah<br><span class="text-emerald-400">Desa Ciawiasih</span>
             </h1>
-            <p class="text-lg md:text-xl opacity-90 max-w-2xl leading-relaxed">
-                Mendukung pengelolaan sampah mandiri dan pertumbuhan ekonomi lokal melalui kerajinan tangan berkualitas tinggi. Mari bersama ciptakan lingkungan yang bersih dan sejahtera.
+            <p class="text-base sm:text-lg md:text-xl opacity-90 max-w-2xl leading-relaxed">
+                Mendukung pengelolaan sampah mandiri, edukasi literasi lingkungan, dan pertumbuhan ekonomi sirkular desa melalui promosi produk daur ulang berkualitas.
             </p>
-            <div class="flex flex-wrap gap-4 pt-6">
+            <div class="flex flex-wrap gap-4 pt-4">
                 <a href="{{ route('catalog.index') }}"
-                   class="border border-white hover:bg-white hover:text-black text-white text-label-md px-8 py-3.5 rounded-lg font-semibold transition duration-300">
-                    Lihat Katalog Produk
+                   class="border border-white/40 hover:bg-white/10 backdrop-blur-sm text-white text-sm sm:text-base px-7 py-3.5 rounded-xl font-semibold transition duration-300 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-lg">storefront</span>
+                    <span>Lihat Katalog Produk</span>
                 </a>
                 <a href="{{ route('education.index') }}"
-                   class="border border-white hover:bg-white hover:text-black text-white text-label-md px-8 py-3.5 rounded-lg font-semibold transition duration-300">
-                    Pelajari Edukasi
+                   class="border border-white/40 hover:bg-white/10 backdrop-blur-sm text-white text-sm sm:text-base px-7 py-3.5 rounded-xl font-semibold transition duration-300 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-lg">school</span>
+                    <span>Pelajari Edukasi</span>
                 </a>
             </div>
         </div>
